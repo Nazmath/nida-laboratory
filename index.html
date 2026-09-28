@@ -6,155 +6,1105 @@
 <meta name="theme-color" content="#0b5c66">
 <meta name="description" content="Nida Laboratory, Sidlaghatta — diagnostic laboratory services and home sample collection.">
 <title>Nida Laboratory | Sidlaghatta</title>
+
 <style>
-:root{--ink:#12313a;--muted:#64757b;--brand:#0b5c66;--brand2:#0e7b78;--mint:#e9f7f5;--line:#dfe9ea;--white:#fff;--soft:#f6faf9;--gold:#d5a72a}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
-a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 20px}
-.top{background:#073f47;color:#dff8f5;font-size:13px}.top .wrap{display:flex;justify-content:space-between;gap:12px;padding:8px 20px;flex-wrap:wrap}
-nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.navin{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800}.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:1px solid #d7e2e2}.brand small{display:block;color:var(--muted);font-weight:500;font-size:11px;margin-top:-2px}
-.links{display:flex;gap:22px;font-size:14px;font-weight:650}.links a:hover{color:var(--brand)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 17px;font-weight:750;cursor:pointer}.primary{background:var(--brand);color:white}.secondary{background:var(--mint);color:var(--brand)}
-.hero{background:linear-gradient(135deg,#f4fbfa 0%,#e8f5f3 55%,#fff 100%);padding:64px 0 58px}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}.eyebrow{color:var(--brand2);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
-h1{font-size:clamp(38px,5vw,64px);line-height:1.02;margin:12px 0 18px;letter-spacing:-.04em}h2{font-size:32px;line-height:1.15;margin:0 0 12px}h3{margin:0 0 7px}.lead{font-size:18px;color:#53686e;max-width:650px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}
-.trust{display:flex;gap:22px;flex-wrap:wrap;color:#4e656b;font-size:13px}.trust b{color:var(--ink)}
-.hero-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 18px 55px rgba(12,65,70,.10)}.hero-card img{width:100%;max-width:290px;display:block;margin:auto;border-radius:18px}
-section{padding:72px 0}.soft{background:var(--soft)}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}.section-head p{color:var(--muted);margin:0;max-width:650px}
-.search{width:100%;border:1px solid var(--line);border-radius:13px;padding:14px 16px;font-size:15px;outline:none}.search:focus{border-color:var(--brand)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid var(--line);border-radius:18px;padding:21px;background:white;transition:.2s}.card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.06)}.icon{width:42px;height:42px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-size:20px;margin-bottom:14px}.muted{color:var(--muted);font-size:14px}
-.homebox{background:linear-gradient(135deg,#0b5c66,#0e7b78);color:white;border-radius:28px;padding:38px}.homegrid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.homebox p{color:#d9f4f1}.homebox .btn{background:white;color:var(--brand)}.homebox .secondary{background:rgba(255,255,255,.14);color:white;border:1px solid rgba(255,255,255,.3)}
-.steps{display:grid;grid-template-columns:1fr;gap:12px}.step{padding:18px;border-radius:17px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18)}.num{font-size:12px;font-weight:800;opacity:.75}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-card{border:1px solid var(--line);border-radius:20px;padding:25px;background:white}.contactrow{display:flex;gap:12px;margin:16px 0}.contactrow strong{display:block}.contactrow span{color:var(--muted);font-size:14px}
-.map{width:100%;height:310px;border:0;border-radius:18px}.note{font-size:12px;color:var(--muted);margin-top:12px}
-footer{background:#073f47;color:#d8eeec;padding:38px 0 80px}.foot{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.foot small{color:#a9cfcc}
-.sticky{display:none;position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid var(--line);padding:9px;z-index:30;grid-template-columns:1fr 1fr;gap:8px}
-@media(max-width:850px){.links{display:none}.hero-grid,.homegrid,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.hero{padding-top:42px}.sticky{display:grid}footer{padding-bottom:95px}}
-@media(max-width:560px){.grid{grid-template-columns:1fr}.section-head{display:block}.section-head .search{margin-top:15px}.hero-card{padding:18px}h1{font-size:43px}.top .wrap{justify-content:center}}
+:root{
+  --ink:#12313a;
+  --muted:#64757b;
+  --brand:#0b5c66;
+  --brand2:#0e7b78;
+  --mint:#e9f7f5;
+  --line:#dfe9ea;
+  --white:#fff;
+  --soft:#f6faf9;
+  --gold:#d5a72a
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--ink);
+  background:#fff;
+  line-height:1.55
+}
+
+a{text-decoration:none;color:inherit}
+
+.wrap{
+  max-width:1120px;
+  margin:auto;
+  padding:0 20px
+}
+
+.top{
+  background:#073f47;
+  color:#dff8f5;
+  font-size:13px
+}
+
+.top .wrap{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:8px 20px;
+  flex-wrap:wrap
+}
+
+nav{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line)
+}
+
+.navin{
+  height:74px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800
+}
+
+.brand img{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid #d7e2e2
+}
+
+.brand small{
+  display:block;
+  color:var(--muted);
+  font-weight:500;
+  font-size:11px;
+  margin-top:-2px
+}
+
+.links{
+  display:flex;
+  gap:22px;
+  font-size:14px;
+  font-weight:650
+}
+
+.links a:hover{color:var(--brand)}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:0;
+  border-radius:12px;
+  padding:12px 17px;
+  font-weight:750;
+  cursor:pointer
+}
+
+.primary{
+  background:var(--brand);
+  color:white
+}
+
+.secondary{
+  background:var(--mint);
+  color:var(--brand)
+}
+
+.hero{
+  background:linear-gradient(135deg,#f4fbfa 0%,#e8f5f3 55%,#fff 100%);
+  padding:64px 0 58px
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:40px;
+  align-items:center
+}
+
+.eyebrow{
+  color:var(--brand2);
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-size:12px
+}
+
+h1{
+  font-size:clamp(38px,5vw,64px);
+  line-height:1.02;
+  margin:12px 0 18px;
+  letter-spacing:-.04em
+}
+
+h2{
+  font-size:32px;
+  line-height:1.15;
+  margin:0 0 12px
+}
+
+h3{margin:0 0 7px}
+
+.lead{
+  font-size:18px;
+  color:#53686e;
+  max-width:650px
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:25px 0
+}
+
+.trust{
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+  color:#4e656b;
+  font-size:13px
+}
+
+.trust b{color:var(--ink)}
+
+.hero-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:26px;
+  box-shadow:0 18px 55px rgba(12,65,70,.10)
+}
+
+.hero-card img{
+  width:100%;
+  max-width:290px;
+  display:block;
+  margin:auto;
+  border-radius:18px
+}
+
+section{padding:72px 0}
+
+.soft{background:var(--soft)}
+
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:end;
+  margin-bottom:28px
+}
+
+.section-head p{
+  color:var(--muted);
+  margin:0;
+  max-width:650px
+}
+
+.search{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:14px 16px;
+  font-size:15px;
+  outline:none
+}
+
+.search:focus{border-color:var(--brand)}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:21px;
+  background:white;
+  transition:.2s
+}
+
+.card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(0,0,0,.06)
+}
+
+.icon{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  background:var(--mint);
+  display:grid;
+  place-items:center;
+  font-size:20px;
+  margin-bottom:14px
+}
+
+.muted{
+  color:var(--muted);
+  font-size:14px
+}
+
+.homebox{
+  background:linear-gradient(135deg,#0b5c66,#0e7b78);
+  color:white;
+  border-radius:28px;
+  padding:38px
+}
+
+.homegrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:center
+}
+
+.homebox p{color:#d9f4f1}
+
+.homebox .btn{
+  background:white;
+  color:var(--brand)
+}
+
+.homebox .secondary{
+  background:rgba(255,255,255,.14);
+  color:white;
+  border:1px solid rgba(255,255,255,.3)
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px
+}
+
+.step{
+  padding:18px;
+  border-radius:17px;
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.18)
+}
+
+.num{
+  font-size:12px;
+  font-weight:800;
+  opacity:.75
+}
+
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px
+}
+
+.contact-card{
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:25px;
+  background:white
+}
+
+.contactrow{
+  display:flex;
+  gap:12px;
+  margin:16px 0
+}
+
+.contactrow strong{display:block}
+
+.contactrow span{
+  color:var(--muted);
+  font-size:14px
+}
+
+.map{
+  width:100%;
+  height:310px;
+  border:0;
+  border-radius:18px
+}
+
+.note{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:12px
+}
+
+.qr-card{
+  max-width:440px;
+  margin:0 auto;
+  text-align:center
+}
+
+.qr-code{
+  width:190px;
+  height:190px;
+  display:block;
+  margin:10px auto 20px;
+  border-radius:12px
+}
+
+footer{
+  background:#073f47;
+  color:#d8eeec;
+  padding:38px 0 80px
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:25px;
+  flex-wrap:wrap
+}
+
+.foot small{color:#a9cfcc}
+
+.sticky{
+  display:none;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:white;
+  border-top:1px solid var(--line);
+  padding:9px;
+  z-index:30;
+  grid-template-columns:1fr 1fr;
+  gap:8px
+}
+
+@media(max-width:850px){
+  .links{display:none}
+
+  .hero-grid,
+  .homegrid,
+  .contact{
+    grid-template-columns:1fr
+  }
+
+  .grid{
+    grid-template-columns:1fr 1fr
+  }
+
+  .hero{padding-top:42px}
+
+  .sticky{display:grid}
+
+  footer{padding-bottom:95px}
+}
+
+@media(max-width:560px){
+  .grid{grid-template-columns:1fr}
+
+  .section-head{display:block}
+
+  .section-head .search{
+    margin-top:15px
+  }
+
+  .hero-card{padding:18px}
+
+  h1{font-size:43px}
+
+  .top .wrap{
+    justify-content:center
+  }
+}
 </style>
 </head>
-<body>
-<div class="top"><div class="wrap"><span>⏰ Working hours: 6:00 AM – 10:00 PM</span><span>📍 Near Railway Station, T.B. Road, Sidlaghatta</span></div></div>
 
-<nav><div class="wrap navin">
-<a class="brand" href="#home"><img src="nida-logo.jpg" alt="Nida Laboratory logo"><span>Nida Laboratory<small>Diagnostic Laboratory • Sidlaghatta</small></span></a>
-<div class="links"><a href="#tests">Tests</a><a href="#homecollection">Home Collection</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-<a class="btn primary" href="tel:+918431613454">☎ Call Technician</a>
-</div></nav>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <span>⏰ Working hours: 6:00 AM – 10:00 PM</span>
+    <span>📍 Near Railway Station, T.B. Road, Sidlaghatta</span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap navin">
+
+    <a class="brand" href="#home">
+      <img src="nida-logo.jpg" alt="Nida Laboratory logo">
+      <span>
+        Nida Laboratory
+        <small>Diagnostic Laboratory • Sidlaghatta</small>
+      </span>
+    </a>
+
+    <div class="links">
+      <a href="#tests">Tests</a>
+      <a href="#homecollection">Home Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#qr">QR Code</a>
+    </div>
+
+    <a class="btn primary" href="tel:+918431613454">
+      ☎ Call Technician
+    </a>
+
+  </div>
+</nav>
 
 <main id="home">
-<section class="hero"><div class="wrap hero-grid">
-<div>
-<div class="eyebrow">Accurate • Affordable • Quick</div>
-<h1>Healthcare testing, made simpler.</h1>
-<p class="lead">Nida Laboratory provides diagnostic testing in Sidlaghatta, with convenient home sample collection so you can get tested without unnecessary travel or waiting.</p>
-<div class="actions">
-<a class="btn primary" href="https://wa.me/918431613454?text=Hello%20Nida%20Laboratory%2C%20I%20would%20like%20to%20enquire%20about%20a%20test." target="_blank">💬 WhatsApp</a>
-<a class="btn secondary" href="#homecollection">🏠 Book Home Collection</a>
-<a class="btn secondary" href="https://maps.app.goo.gl/Lb7qvjmHQXZDCtdi9" target="_blank">📍 Get Directions</a>
-</div>
-<div class="trust"><span>✓ <b>Home collection</b></span><span>✓ <b>Call / WhatsApp</b> booking</span><span>✓ <b>6 AM – 10 PM</b></span></div>
-</div>
-<div class="hero-card">
-<img src="nida-logo.jpg" alt="Nida Laboratory">
-<h3 style="text-align:center;margin-top:18px">Your health is our priority in every analysis.</h3>
-<p class="muted" style="text-align:center">Near Railway Station, T.B. Road, Sidlaghatta – 562105</p>
-</div>
-</div></section>
 
-<section id="tests"><div class="wrap">
-<div class="section-head"><div><div class="eyebrow">Diagnostic services</div><h2>Find the test you need</h2><p>Browse common categories. Please call or WhatsApp the laboratory to confirm the exact test, preparation and availability.</p></div></div>
-<input id="testSearch" class="search" placeholder="Search tests or categories — e.g. sugar, thyroid, urine, CBC">
-<div class="grid" id="testGrid" style="margin-top:18px">
-<article class="card test"><div class="icon">🩸</div><h3>Blood Tests</h3><p class="muted">Routine and other blood investigations, subject to availability.</p></article>
-<article class="card test"><div class="icon">🍬</div><h3>Diabetes / Sugar</h3><p class="muted">Common glucose and diabetes-related investigations, such as fasting sugar and HbA1c, subject to availability.</p></article>
-<article class="card test"><div class="icon">🦋</div><h3>Thyroid</h3><p class="muted">Thyroid-related investigations such as TSH, T3 and T4, subject to availability.</p></article>
-<article class="card test"><div class="icon">🧪</div><h3>Urine Tests</h3><p class="muted">Routine urine examination and other urine investigations.</p></article>
-<article class="card test"><div class="icon">⚗️</div><h3>Hormones</h3><p class="muted">Hormone investigations may be available; ask the technician about the required test.</p></article>
-<article class="card test"><div class="icon">🔬</div><h3>Enzymes & Biochemistry</h3><p class="muted">Biochemistry and enzyme-related investigations for routine diagnostic needs.</p></article>
-<article class="card test"><div class="icon">🧬</div><h3>Allergy Tests</h3><p class="muted">Allergy-related investigations may be available. Contact the laboratory for details.</p></article>
-<article class="card test"><div class="icon">🫀</div><h3>Liver & Kidney</h3><p class="muted">Common liver and kidney function investigations, subject to availability.</p></article>
-<article class="card test"><div class="icon">📋</div><h3>Other Tests</h3><p class="muted">Don't see your test? Send the test name on WhatsApp and the technician can confirm.</p></article>
-</div>
-</div></section>
+<section class="hero">
+  <div class="wrap hero-grid">
 
-<section id="homecollection" class="soft"><div class="wrap">
-<div class="homebox"><div class="homegrid">
-<div>
-<div class="eyebrow" style="color:#b9efea">At your doorstep</div>
-<h2>Home sample collection</h2>
-<p>Request a home collection and share your current location with the technician. The location button creates a Google Maps link that you can send through WhatsApp.</p>
-<div class="actions">
-<a class="btn" href="https://wa.me/918431613454?text=Hello%20Nida%20Laboratory%2C%20I%20want%20to%20book%20home%20sample%20collection." target="_blank">💬 Book on WhatsApp</a>
-<button class="btn secondary" id="locBtn">📍 Share my location</button>
-</div>
-<small id="locStatus" style="opacity:.85"></small>
-</div>
-<div class="steps">
-<div class="step"><div class="num">01</div><h3>Choose your test</h3><p>Tell us the test or service you need.</p></div>
-<div class="step"><div class="num">02</div><h3>Share location</h3><p>Allow location access and send the map link.</p></div>
-<div class="step"><div class="num">03</div><h3>Coordinate collection</h3><p>The technician confirms the visit with you.</p></div>
-</div>
-</div></div>
-</div></section>
+    <div>
 
-<section id="about"><div class="wrap">
-<div class="section-head"><div><div class="eyebrow">About the laboratory</div><h2>Nida Laboratory, Sidlaghatta</h2><p>Located near Sidlaghatta Railway Station on T.B. Road, Nida Laboratory offers laboratory testing and home sample collection support.</p></div></div>
-<div class="grid">
-<div class="card"><div class="icon">⏰</div><h3>Working Hours</h3><p class="muted">6:00 AM – 10:00 PM</p></div>
-<div class="card"><div class="icon">📞</div><h3>Technician</h3><p class="muted">Afreez Pasha<br><a href="tel:+918431613454">8431613454</a> · <a href="tel:+917204739716">7204739716</a></p></div>
-<div class="card"><div class="icon">✉️</div><h3>Email</h3><p class="muted"><a href="mailto:nidalaboratory135@gmail.com">nidalaboratory135@gmail.com</a></p></div>
-</div>
-</div></section>
+      <div class="eyebrow">Accurate • Affordable • Quick</div>
 
-<section id="contact" class="soft"><div class="wrap">
-<div class="contact">
-<div class="contact-card">
-<div class="eyebrow">Contact & location</div><h2>Visit or contact us</h2>
-<div class="contactrow"><div>📍</div><div><strong>Laboratory Address</strong><span>Near Railway Station, T.B. Road, Sidlaghatta – 562105, Chikkaballapur District, Karnataka.</span></div></div>
-<div class="contactrow"><div>📞</div><div><strong>Phone</strong><span><a href="tel:+918431613454">8431613454</a> · <a href="tel:+917204739716">7204739716</a></span></div></div>
-<div class="actions"><a class="btn primary" href="tel:+918431613454">Call</a><a class="btn secondary" target="_blank" href="https://wa.me/918431613454">WhatsApp</a><a class="btn secondary" target="_blank" href="https://maps.app.goo.gl/Lb7qvjmHQXZDCtdi9">Open in Maps</a></div>
-</div>
-<div class="contact-card">
-<h3>Quick enquiry</h3><p class="muted">Enter your details and the site will open WhatsApp with a ready-to-send enquiry.</p>
-<input id="name" class="search" style="margin:8px 0" placeholder="Your name">
-<input id="phone" class="search" style="margin:8px 0" placeholder="Phone number">
-<input id="need" class="search" style="margin:8px 0" placeholder="Test / service you need">
-<button class="btn primary" id="enquiry" style="width:100%;margin-top:8px">Send enquiry on WhatsApp</button>
-</div>
-</div>
-<div style="margin-top:25px">
-<iframe class="map" src="https://www.google.com/maps?q=Sidlaghatta%20Railway%20Station%2C%20T.B.%20Road%2C%20Sidlaghatta%2C%20Karnataka%20562105&output=embed" loading="lazy" title="Nida Laboratory map"></iframe>
-<p class="note">Map shown for the laboratory's supplied location. Use “Get Directions” for navigation.</p>
-</div>
-</div></section>
+      <h1>Healthcare testing, made simpler.</h1>
+
+      <p class="lead">
+        Nida Laboratory provides diagnostic testing in Sidlaghatta,
+        with convenient home sample collection so you can get tested
+        without unnecessary travel or waiting.
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="btn primary"
+          href="https://wa.me/918431613454?text=Hello%20Nida%20Laboratory%2C%20I%20would%20like%20to%20enquire%20about%20a%20test"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          💬 WhatsApp
+        </a>
+
+        <a class="btn secondary" href="#homecollection">
+          🏠 Book Home Collection
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://maps.app.goo.gl/Lb7qvjmHQXZDCtdi9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📍 Get Directions
+        </a>
+
+      </div>
+
+      <div class="trust">
+        <span>✓ <b>Home collection</b></span>
+        <span>✓ <b>Call / WhatsApp</b> booking</span>
+        <span>✓ <b>6 AM – 10 PM</b></span>
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+
+      <img src="nida-logo.jpg" alt="Nida Laboratory">
+
+      <h3 style="text-align:center;margin-top:18px">
+        Your health is our priority in every analysis.
+      </h3>
+
+      <p class="muted" style="text-align:center">
+        Near Railway Station, T.B. Road, Sidlaghatta – 562105
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="tests">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Diagnostic services</div>
+
+        <h2>Find the test you need</h2>
+
+        <p>
+          Browse common categories. Please call or WhatsApp the laboratory
+          to confirm the exact test, preparation and availability.
+        </p>
+      </div>
+    </div>
+
+    <input
+      id="testSearch"
+      class="search"
+      placeholder="Search tests or categories — e.g. sugar, thyroid, urine, CBC"
+    >
+
+    <div class="grid" id="testGrid" style="margin-top:18px">
+
+      <article class="card test">
+        <div class="icon">🩸</div>
+        <h3>Blood Tests</h3>
+        <p class="muted">
+          Routine and other blood investigations, subject to availability.
+        </p>
+      </article>
+
+      <article class="card test">
+        <div class="icon">🍬</div>
+        <h3>Diabetes / Sugar</h3>
+        <p class="muted">
+          Common glucose and diabetes-related investigations,
+          such as fasting sugar and HbA1c, subject to availability.
+        </p>
+      </article>
+
+      <article class="card test">
+        <div class="icon">🦋</div>
+        <h3>Thyroid</h3>
+        <p class="muted">
+          Thyroid-related investigations such as TSH, T3 and T4,
+          subject to availability.
+        </p>
+      </article>
+
+      <article class="card test">
+        <div class="icon">🧪</div>
+        <h3>Urine Tests</h3>
+        <p class="muted">
+          Routine urine examination and other urine investigations.
+        </p>
+      </article>
+
+      <article class="card test">
+        <div class="icon">⚗️</div>
+        <h3>Hormones</h3>
+        <p class="muted">
+          Hormone investigations may be available; ask the technician
+          about the required test.
+        </p>
+      </article>
+
+      <article class="card test">
+        <div class="icon">🔬</div>
+        <h3>Enzymes & Biochemistry</h3>
+        <p class="muted">
+          Biochemistry and enzyme-related investigations for routine
+          diagnostic needs.
+        </p>
+      </article>
+
+      <article class="card test">
+        <div class="icon">🧬</div>
+        <h3>Allergy Tests</h3>
+        <p class="muted">
+          Allergy-related investigations may be available.
+          Contact the laboratory for details.
+        </p>
+      </article>
+
+      <article class="card test">
+        <div class="icon">🫀</div>
+        <h3>Liver & Kidney</h3>
+        <p class="muted">
+          Common liver and kidney function investigations,
+          subject to availability.
+        </p>
+      </article>
+
+      <article class="card test">
+        <div class="icon">📋</div>
+        <h3>Other Tests</h3>
+        <p class="muted">
+          Don't see your test? Send the test name on WhatsApp
+          and the technician can confirm.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="homecollection" class="soft">
+  <div class="wrap">
+
+    <div class="homebox">
+      <div class="homegrid">
+
+        <div>
+
+          <div class="eyebrow" style="color:#b9efea">
+            At your doorstep
+          </div>
+
+          <h2>Home sample collection</h2>
+
+          <p>
+            Request a home collection and share your current location
+            with the technician. The location button creates a Google
+            Maps link that you can send through WhatsApp.
+          </p>
+
+          <div class="actions">
+
+            <a
+              class="btn"
+              href="https://wa.me/918431613454?text=Hello%20Nida%20Laboratory%2C%20I%20want%20to%20book%20home%20sample%20collection"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              💬 Book on WhatsApp
+            </a>
+
+            <button class="btn secondary" id="locBtn">
+              📍 Share my location
+            </button>
+
+          </div>
+
+          <small id="locStatus" style="opacity:.85"></small>
+
+        </div>
+
+        <div class="steps">
+
+          <div class="step">
+            <div class="num">01</div>
+            <h3>Choose your test</h3>
+            <p>Tell us the test or service you need.</p>
+          </div>
+
+          <div class="step">
+            <div class="num">02</div>
+            <h3>Share location</h3>
+            <p>Allow location access and send the map link.</p>
+          </div>
+
+          <div class="step">
+            <div class="num">03</div>
+            <h3>Coordinate collection</h3>
+            <p>The technician confirms the visit with you.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">About the laboratory</div>
+
+        <h2>Nida Laboratory, Sidlaghatta</h2>
+
+        <p>
+          Located near Sidlaghatta Railway Station on T.B. Road,
+          Nida Laboratory offers laboratory testing and home sample
+          collection support.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="icon">⏰</div>
+        <h3>Working Hours</h3>
+        <p class="muted">6:00 AM – 10:00 PM</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📞</div>
+        <h3>Technician</h3>
+
+        <p class="muted">
+          Afreez Pasha<br>
+
+          <a href="tel:+918431613454">8431613454</a>
+          ·
+          <a href="tel:+917204739716">7204739716</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">✉️</div>
+        <h3>Email</h3>
+
+        <p class="muted">
+          <a href="mailto:nidalaboratory135@gmail.com">
+            nidalaboratory135@gmail.com
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact" class="soft">
+  <div class="wrap">
+
+    <div class="contact">
+
+      <div class="contact-card">
+
+        <div class="eyebrow">Contact & location</div>
+
+        <h2>Visit or contact us</h2>
+
+        <div class="contactrow">
+          <div>📍</div>
+
+          <div>
+            <strong>Laboratory Address</strong>
+
+            <span>
+              Near Railway Station, T.B. Road, Sidlaghatta – 562105,
+              Chikkaballapur District, Karnataka.
+            </span>
+          </div>
+        </div>
+
+        <div class="contactrow">
+          <div>📞</div>
+
+          <div>
+            <strong>Phone</strong>
+
+            <span>
+              <a href="tel:+918431613454">8431613454</a>
+              ·
+              <a href="tel:+917204739716">7204739716</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="actions">
+
+          <a class="btn primary" href="tel:+918431613454">
+            Call
+          </a>
+
+          <a
+            class="btn secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wa.me/918431613454"
+          >
+            WhatsApp
+          </a>
+
+          <a
+            class="btn secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://maps.app.goo.gl/Lb7qvjmHQXZDCtdi9"
+          >
+            Open in Maps
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3>Quick enquiry</h3>
+
+        <p class="muted">
+          Enter your details and the site will open WhatsApp
+          with a ready-to-send enquiry.
+        </p>
+
+        <input
+          id="name"
+          class="search"
+          style="margin:8px 0"
+          placeholder="Your name"
+        >
+
+        <input
+          id="phone"
+          class="search"
+          style="margin:8px 0"
+          placeholder="Phone number"
+          inputmode="tel"
+        >
+
+        <input
+          id="need"
+          class="search"
+          style="margin:8px 0"
+          placeholder="Test / service you need"
+        >
+
+        <button
+          class="btn primary"
+          id="enquiry"
+          style="width:100%;margin-top:8px"
+        >
+          Send enquiry on WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div style="margin-top:25px">
+
+      <iframe
+        class="map"
+        src="https://www.google.com/maps?q=Sidlaghatta%20Railway%20Station%2C%20T.B.%20Road%2C%20Sidlaghatta%2C%20Karnataka%20562105&output=embed"
+        loading="lazy"
+        title="Nida Laboratory map"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <p class="note">
+        Map shown for the laboratory's supplied location.
+        Use “Get Directions” for navigation.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="qr" class="soft">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="eyebrow">Stay connected</div>
+
+        <h2>Visit Our Website</h2>
+
+        <p>
+          Scan the QR code to quickly open the Nida Laboratory website.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="card qr-card">
+
+      <img
+        src="website-qr-code.png"
+        alt="Nida Laboratory Website QR Code"
+        class="qr-code"
+      >
+
+      <h3>Scan to open Nida Laboratory</h3>
+
+      <p class="muted">
+        Access our tests, home sample collection and contact information.
+      </p>
+
+      <a
+        class="btn primary"
+        href="https://nazmath.github.io/nida-laboratory/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🌐 Open Website
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
 </main>
 
-<footer><div class="wrap foot"><div><strong>Nida Laboratory</strong><br><small>Diagnostic Laboratory • Sidlaghatta</small></div><div><small>☎ 8431613454 · 7204739716<br>✉ nidalaboratory135@gmail.com</small></div><div><small>© 2026 Nida Laboratory. For diagnostic information only.</small></div></div></footer>
 
-<div class="sticky"><a class="btn primary" href="tel:+918431613454">☎ Call</a><a class="btn secondary" target="_blank" href="https://wa.me/918431613454">💬 WhatsApp</a></div>
+<footer>
+
+  <div class="wrap foot">
+
+    <div>
+      <strong>Nida Laboratory</strong><br>
+      <small>Diagnostic Laboratory • Sidlaghatta</small>
+    </div>
+
+    <div>
+      <small>
+        ☎ 8431613454 · 7204739716<br>
+        ✉ nidalaboratory135@gmail.com
+      </small>
+    </div>
+
+    <div>
+      <small>
+        © 2026 Nida Laboratory. For diagnostic information only.
+      </small>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<div class="sticky">
+
+  <a class="btn primary" href="tel:+918431613454">
+    ☎ Call
+  </a>
+
+  <a
+    class="btn secondary"
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://wa.me/918431613454"
+  >
+    💬 WhatsApp
+  </a>
+
+</div>
+
 
 <script>
-const search=document.getElementById('testSearch');
-search.addEventListener('input',()=>{const q=search.value.toLowerCase().trim();document.querySelectorAll('.test').forEach(c=>c.style.display=c.innerText.toLowerCase().includes(q)?'block':'none')});
-document.getElementById('enquiry').addEventListener('click',()=>{
- const n=document.getElementById('name').value.trim(), p=document.getElementById('phone').value.trim(), t=document.getElementById('need').value.trim();
- const msg=`Hello Nida Laboratory,%0A%0AName: ${encodeURIComponent(n||'Not provided')}%0APhone: ${encodeURIComponent(p||'Not provided')}%0ATest/Service: ${encodeURIComponent(t||'Not specified')}`;
- window.open('https://wa.me/918431613454?text='+msg,'_blank');
+
+const search = document.getElementById('testSearch');
+
+search.addEventListener('input', () => {
+
+  const q = search.value.toLowerCase().trim();
+
+  document.querySelectorAll('.test').forEach(card => {
+
+    card.style.display =
+      card.innerText.toLowerCase().includes(q)
+        ? 'block'
+        : 'none';
+
+  });
+
 });
-document.getElementById('locBtn').addEventListener('click',()=>{
- const status=document.getElementById('locStatus');
- if(!navigator.geolocation){status.textContent='Location is not supported by this browser.';return;}
- status.textContent='Getting your current location…';
- navigator.geolocation.getCurrentPosition(pos=>{
-   const lat=pos.coords.latitude.toFixed(6), lon=pos.coords.longitude.toFixed(6);
-   const map=`https://www.google.com/maps?q=${lat},${lon}`;
-   const text=`Hello Nida Laboratory, I want home sample collection.%0A%0AMy current location: ${encodeURIComponent(map)}`;
-   status.innerHTML='Location link created. Opening WhatsApp…';
-   window.open('https://wa.me/918431613454?text='+text,'_blank');
- },()=>{status.textContent='Could not get location. Please allow location permission or use WhatsApp to share it manually.'},{enableHighAccuracy:true,timeout:10000,maximumAge:0});
+
+
+document.getElementById('enquiry').addEventListener('click', () => {
+
+  const n = document.getElementById('name').value.trim();
+  const p = document.getElementById('phone').value.trim();
+  const t = document.getElementById('need').value.trim();
+
+  const message =
+    `Hello Nida Laboratory,
+
+Name: ${n || 'Not provided'}
+Phone: ${p || 'Not provided'}
+Test/Service: ${t || 'Not specified'}`;
+
+  const whatsappURL =
+    'https://wa.me/918431613454?text=' +
+    encodeURIComponent(message);
+
+  window.open(whatsappURL, '_blank');
+
 });
+
+
+document.getElementById('locBtn').addEventListener('click', () => {
+
+  const status = document.getElementById('locStatus');
+
+  if (!navigator.geolocation) {
+
+    status.textContent =
+      'Location is not supported by this browser.';
+
+    return;
+  }
+
+  status.textContent =
+    'Getting your current location…';
+
+  navigator.geolocation.getCurrentPosition(
+
+    pos => {
+
+      const lat =
+        pos.coords.latitude.toFixed(6);
+
+      const lon =
+        pos.coords.longitude.toFixed(6);
+
+      const map =
+        `https://www.google.com/maps?q=${lat},${lon}`;
+
+      const message =
+        `Hello Nida Laboratory,
+
+I want home sample collection.
+
+My current location:
+${map}`;
+
+      status.textContent =
+        'Location link created. Opening WhatsApp…';
+
+      const whatsappURL =
+        'https://wa.me/918431613454?text=' +
+        encodeURIComponent(message);
+
+      window.open(whatsappURL, '_blank');
+
+    },
+
+    () => {
+
+      status.textContent =
+        'Could not get location. Please allow location permission or use WhatsApp to share it manually.';
+
+    },
+
+    {
+      enableHighAccuracy:true,
+      timeout:10000,
+      maximumAge:0
+    }
+
+  );
+
+});
+
 </script>
+
 </body>
 </html>
